@@ -1,19 +1,24 @@
 # Central PDF
 
-Programas para Windows que reúnem, num só lugar, as tarefas do dia a dia com PDFs de um escritório: editar páginas, juntar, preparar para protocolo, tarjar dados sensíveis, converter, renomear e enviar arquivos para as pastas certas.
+Programas para Windows para o dia a dia de um escritório com PDFs e documentos. Dois programas:
+
+| Programa | Para quê | Arquivo |
+|---|---|---|
+| **Central PDF** | Menu com 10 ferramentas para PDF: editar páginas, juntar, preparar para protocolo, tarjar dados sensíveis, converter, buscar, renomear e enviar para as pastas. Digite o que quer fazer e ele indica a ferramenta. | `Central_PDF.zip` |
+| **Renomear Docs** | Confere documentos (atestados, declarações…) um a um: o OCR sugere o nome da pessoa e o tipo, você confirma e ele renomeia e envia para as pastas. | `Renomear_Docs.zip` |
+
+Instale um ou os dois. Dentro de qualquer um, em **Versão › Outros programas…**, dá para instalar o outro com um clique.
 
 Funciona **100% offline**: nada é enviado para a internet (a internet só é usada na instalação das bibliotecas e, se você pedir, para buscar atualização aqui no GitHub).
-
-O programa é o **Central PDF**, um menu com 10 ferramentas. Digite o que você quer fazer ("diminuir o pdf para mandar no tribunal") e ele indica a ferramenta.
 
 > O antigo **Editor PDF** foi unificado ao Central: a mesma mesa de páginas está em **Editar PDF (visual)**. Quem usava o Editor deve baixar só o `Central_PDF.zip`.
 
 ## Baixar e instalar
 
 1. Instale o **Python 3.10 ou superior** (<https://www.python.org/downloads/>) e marque **Add python.exe to PATH** na primeira tela do instalador.
-2. Em **[Releases](../../releases/latest)** baixe `Central_PDF.zip` e **descompacte** em qualquer pasta (não rode de dentro do ZIP).
+2. Em **[Releases](../../releases/latest)** baixe `Central_PDF.zip` e/ou `Renomear_Docs.zip` e **descompacte** em qualquer pasta (não rode de dentro do ZIP).
 3. Dê dois cliques em `Instalar_Dependencias.bat` (precisa de internet). Ele instala as bibliotecas e, no Central, pergunta se você quer instalar o Tesseract (OCR) que acompanha o pacote.
-4. Para abrir: `Abrir Central PDF.bat`. O instalador oferece criar um atalho na Área de Trabalho e no menu "Enviar para". Para ter "Abrir no Central PDF" no botão direito dos PDFs, rode `Instalar menu botao direito.bat`.
+4. Para abrir: `Abrir Central PDF.bat` (ou `Abrir Renomear Docs.bat`). O instalador oferece criar um atalho na Área de Trabalho e no menu "Enviar para". Para ter "Abrir no Central PDF" no botão direito dos PDFs, rode `Instalar menu botao direito.bat`.
 
 O Poppler já vem no pacote do Central. O Tesseract só é necessário para OCR (PDF escaneado: renomear pelo conteúdo, tarjar dados, deixar o PDF pesquisável).
 
@@ -34,6 +39,15 @@ O Poppler já vem no pacote do Central. O Tesseract só é necessário para OCR 
 - **Renomear arquivos** – pelo conteúdo (OCR + planilha), corrigir nomes, sufixos.
 - **Listar nomes e códigos** – a partir dos nomes dos arquivos ou do conteúdo.
 - **Enviar para as pastas** – você monta um **mapa de pastas** (pasta principal › subpastas › pasta de cada pessoa, com o padrão do nome: `{nome}`, `{codigo} - {nome}`…) ou importa de uma pasta que já existe. O programa descobre de quem é cada arquivo pelo nome e o envia para o lugar certo. É possível conferir antes, nunca sobrescreve e desfaz.
+
+## Renomear Docs
+
+Para quem recebe muitos documentos (atestados, declarações, certidões…) e precisa nomear cada um com **NOME - TIPO**:
+- A pasta é opcional: você pode **arrastar** PDFs, fotos ou pastas para a janela.
+- O OCR lê o documento e sugere o nome da pessoa: acha depois de rótulos como "Paciente:", "Nome:", "Pessoa:", "Name:" e frases como "Atesto que…". Funciona mesmo **sem planilha**, graças a uma lista de cerca de 64 mil nomes (Censos do IBGE) e sobrenomes comuns. Com uma planilha de nomes, ele corrige e confirma.
+- O **tipo** (sufixo) pode ser escolhido por **regras**, por exemplo `atestado or medico`.
+- Se a planilha tiver número de registro (RE, matrícula…), o campo aparece e pode entrar no nome do arquivo.
+- Renomeia e envia só no fim, com numeral romano para repetidos (II, III), cópia opcional para uma pasta de rede e **desfazer**.
 
 ## Cadastro configurável
 
