@@ -44,7 +44,7 @@ Para identificar pessoas (clientes, funcionários, processos…) o programa lê 
 
 ## Visual
 
-Cinco visuais (Neutro claro, Grafite, Escuro, Alto contraste e Azul clássico), em **Visual do programa**. Funciona com o zoom do Windows (125%, 150%…).
+Doze visuais (Neutro claro, Grafite, Escuro, Alto contraste, Azul clássico, Rosa suave, Lilás, Roxo, Noite roxa, Menta pastel, Pêssego e Céu pastel), em **Visual do programa**. Funciona com o zoom do Windows (125%, 150%…).
 
 ## Atualização
 
