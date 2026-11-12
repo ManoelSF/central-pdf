@@ -4,19 +4,16 @@ Programas para Windows que reúnem, num só lugar, as tarefas do dia a dia com P
 
 Funciona **100% offline**: nada é enviado para a internet (a internet só é usada na instalação das bibliotecas e, se você pedir, para buscar atualização aqui no GitHub).
 
-Há dois programas neste repositório:
+O programa é o **Central PDF**, um menu com 10 ferramentas. Digite o que você quer fazer ("diminuir o pdf para mandar no tribunal") e ele indica a ferramenta.
 
-| Programa | Para quê |
-|---|---|
-| **Central PDF** | Menu com 10 ferramentas. Digite o que você quer fazer ("diminuir o pdf para mandar no tribunal") e ele indica a ferramenta. |
-| **Editor PDF** | Só a mesa visual de páginas (a mesma do Central), em um programa leve, com arrastar-e-soltar e menu do botão direito. |
+> O antigo **Editor PDF** foi unificado ao Central: a mesma mesa de páginas está em **Editar PDF (visual)**. Quem usava o Editor deve baixar só o `Central_PDF.zip`.
 
 ## Baixar e instalar
 
 1. Instale o **Python 3.10 ou superior** (<https://www.python.org/downloads/>) e marque **Add python.exe to PATH** na primeira tela do instalador.
-2. Em **[Releases](../../releases/latest)** baixe `Central_PDF.zip` (e/ou `Editor_PDF.zip`) e **descompacte** em qualquer pasta (não rode de dentro do ZIP).
+2. Em **[Releases](../../releases/latest)** baixe `Central_PDF.zip` e **descompacte** em qualquer pasta (não rode de dentro do ZIP).
 3. Dê dois cliques em `Instalar_Dependencias.bat` (precisa de internet). Ele instala as bibliotecas e, no Central, pergunta se você quer instalar o Tesseract (OCR) que acompanha o pacote.
-4. Para abrir: `Abrir Central PDF.bat` (ou `Abrir Editor PDF.bat`). O instalador oferece criar um atalho na Área de Trabalho.
+4. Para abrir: `Abrir Central PDF.bat`. O instalador oferece criar um atalho na Área de Trabalho e no menu "Enviar para". Para ter "Abrir no Central PDF" no botão direito dos PDFs, rode `Instalar menu botao direito.bat`.
 
 O Poppler já vem no pacote do Central. O Tesseract só é necessário para OCR (PDF escaneado: renomear pelo conteúdo, tarjar dados, deixar o PDF pesquisável).
 
@@ -44,7 +41,7 @@ Para identificar pessoas (clientes, funcionários, processos…) o programa lê 
 
 ## Visual
 
-Doze visuais (Neutro claro, Grafite, Escuro, Alto contraste, Azul clássico, Rosa suave, Lilás, Roxo, Noite roxa, Menta pastel, Pêssego e Céu pastel), em **Visual do programa**. Funciona com o zoom do Windows (125%, 150%…).
+Doze visuais (Neutro claro, Grafite, Escuro, Alto contraste, Azul clássico, Rosa suave, Lilás, Roxo, Noite roxa, Menta pastel, Pêssego e Céu pastel), em **Visual do programa**. Funciona com o zoom do Windows e tem zoom próprio de 75% a 150% (botões A－ A＋ ou Ctrl + / Ctrl − / Ctrl 0). O menu lateral pode ser ocultado (Ctrl+B) para liberar espaço.
 
 ## Atualização
 
