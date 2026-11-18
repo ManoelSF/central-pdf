@@ -32,12 +32,17 @@ O Poppler já vem no pacote do Central. O Tesseract só é necessário para OCR 
 - **Tarjar dados sensíveis** – cobre ou apaga os dados acima em vários arquivos.
 - **Automatizar em lote** – monte uma receita (sequência de passos), salve e aplique em todos os PDFs de uma pasta; tem modo *simular*.
 
+**Digitalização (scanner)**
+- **Separar por QR** – imprime *folhas separadoras* com QR code; você digitaliza a pilha toda num PDF só e o programa corta em cada folha (nome automático “Nome - TIPO.pdf” se a folha tiver nome e tipo).
+- **Limpar scans** – tira páginas em branco e a borda escura do scanner (sem apagar nada do arquivo).
+- **Pasta vigiada** – olha a pasta do scanner e trata sozinho cada PDF novo (receita, separar por QR ou limpar); o original vai para “Processados”.
+
 **Converter**
 - **Converter arquivos** – para PDF (imagens, Word, Excel) e de PDF (imagens, texto, Word, Excel).
 
 **Nomes e pastas**
 - **Buscar texto ou nome** – acha e extrai as páginas que contêm um nome ou texto (texto do PDF ou OCR).
-- **Renomear arquivos** – pelo conteúdo (OCR + planilha), corrigir nomes, sufixos.
+- **Renomear arquivos** – pelo conteúdo (OCR + planilha), **pelo título do PDF digital**, corrigir nomes, sufixos.
 - **Listar nomes e códigos** – a partir dos nomes dos arquivos ou do conteúdo.
 - **Enviar para as pastas** – você monta um **mapa de pastas** (pasta principal › subpastas › pasta de cada pessoa, com o padrão do nome: `{nome}`, `{codigo} - {nome}`…) ou importa de uma pasta que já existe. O programa descobre de quem é cada arquivo pelo nome e o envia para o lugar certo. É possível conferir antes, nunca sobrescreve e desfaz.
 
