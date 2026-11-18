@@ -1,10 +1,11 @@
 # Central PDF
 
-Programas para Windows para o dia a dia de um escritório com PDFs e documentos. Dois programas:
+Programas para Windows para o dia a dia de um escritório com PDFs, documentos e e-mails. Três programas:
 
 | Programa | Para quê | Arquivo |
 |---|---|---|
 | **Central PDF** | Menu com 10 ferramentas para PDF: editar páginas, juntar, preparar para protocolo, tarjar dados sensíveis, converter, buscar, renomear e enviar para as pastas. Digite o que quer fazer e ele indica a ferramenta. | `Central_PDF.zip` |
+| **Organizador Outlook** | Organiza a Caixa de Entrada do Outlook por regras (pasta e termos como `de:`, `assunto:`, com `and`/`or`/`not`): simula antes, move e desfaz. Precisa do Outlook clássico. | `Organizador_Outlook.zip` |
 | **Renomear Docs** | Confere documentos (atestados, declarações…) um a um: o OCR sugere o nome da pessoa e o tipo, você confirma e ele renomeia e envia para as pastas. | `Renomear_Docs.zip` |
 
 Instale um ou os dois. Dentro de qualquer um, em **Versão › Outros programas…**, dá para instalar o outro com um clique.
@@ -16,7 +17,7 @@ Funciona **100% offline**: nada é enviado para a internet (a internet só é us
 ## Baixar e instalar
 
 1. Instale o **Python 3.10 ou superior** (<https://www.python.org/downloads/>) e marque **Add python.exe to PATH** na primeira tela do instalador.
-2. Em **[Releases](../../releases/latest)** baixe `Central_PDF.zip` e/ou `Renomear_Docs.zip` e **descompacte** em qualquer pasta (não rode de dentro do ZIP).
+2. Em **[Releases](../../releases/latest)** baixe `Central_PDF.zip`, `Renomear_Docs.zip` e/ou `Organizador_Outlook.zip` e **descompacte** em qualquer pasta (não rode de dentro do ZIP).
 3. Dê dois cliques em `Instalar_Dependencias.bat` (precisa de internet). Ele instala as bibliotecas e, no Central, pergunta se você quer instalar o Tesseract (OCR) que acompanha o pacote.
 4. Para abrir: `Abrir Central PDF.bat` (ou `Abrir Renomear Docs.bat`). O instalador oferece criar um atalho na Área de Trabalho e no menu "Enviar para". Para ter "Abrir no Central PDF" no botão direito dos PDFs, rode `Instalar menu botao direito.bat`.
 
@@ -26,8 +27,8 @@ O Poppler já vem no pacote do Central. O Tesseract só é necessário para OCR 
 
 **Editar e preparar**
 - **Editar PDF (visual)** – veja as páginas e arraste: remova, gire (90° e 180°), reordene, duplique, insira ou substitua páginas de outro PDF, acrescente páginas em branco (inclusive "branca nos ímpares", para imprimir frente e verso), corte em partes, limite cada parte a X MB, comprima e escreva nas páginas (texto, carimbo, assinatura). O original nunca é alterado. Tem o painel recolhível **Ocultar dados** (valores em R$, nomes, CPF, NIT, RG, CNPJ, nascimento, telefone, e-mail e textos extras), que funciona em páginas giradas e escaneadas e remove o texto de verdade ao salvar.
-- **Juntar PDFs** – em sequência (ordem natural: 1, 2, 3 … 10, 11) ou intercalando frente e verso.
-- **Preparar para protocolo** – numerar folhas, reduzir/dividir por tamanho (limite do tribunal), OCR pesquisável, endireitar/girar, páginas por folha.
+- **Juntar PDFs** – em sequência (ordem natural: 1, 2, 3 … 10, 11) ou intercalando frente e verso. Opcional: **índice clicável**, **marcadores** e numeração de folhas (fls. 1/21), para processos e petições.
+- **Preparar para protocolo** – numerar folhas, **numeração Bates** (PROC-000123), reduzir/dividir por tamanho (limite do tribunal), OCR pesquisável, endireitar/girar, páginas por folha, **carimbo, marca d'água e papel timbrado** e **higienizar** o PDF (tira metadados, comentários, anexos e JavaScript antes de enviar).
 - **Tarjar dados sensíveis** – cobre ou apaga os dados acima em vários arquivos.
 - **Automatizar em lote** – monte uma receita (sequência de passos), salve e aplique em todos os PDFs de uma pasta; tem modo *simular*.
 
